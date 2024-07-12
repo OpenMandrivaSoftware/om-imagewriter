@@ -122,4 +122,4 @@ macx {
 	QMAKE_POST_LINK = strip -S -x $(TARGET)
 }
 
-TRANSLATIONS = lang/ru_RU.ts lang/de_DE.ts lang/fr_FR.ts
+TRANSLATIONS = lang/ru_RU.ts lang/de_DE.ts lang/fr_FR.ts lang/ast.ts lang/bg.ts lang/ca.ts lang/cs.ts lang/da.ts lang/de.ts lang/en.ts lang/es.ts lang/es_AR.ts lang/fi.ts lang/fr.ts lang/hi_IN.ts lang/hr_HR.ts lang/hu.ts lang/id_ID.ts lang/it.ts lang/ja.ts lang/nl_NL.ts lang/pt_BR.ts lang/pt_PT.ts lang/ro_RO.ts lang/ru.ts lang/tr_TR.ts
