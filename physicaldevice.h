@@ -16,7 +16,7 @@ public:
     PhysicalDevice(const QString& name);
 
     // Opens the selected device in WriteOnly mode
-    virtual bool open();
+    virtual bool open(OpenMode flags=QIODevice::WriteOnly);
 
 protected:
 #if defined(Q_OS_WIN32)

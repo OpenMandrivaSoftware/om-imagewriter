@@ -64,6 +64,11 @@ FORMS    += maindialog.ui
 RESOURCES += \
     RosaImageWriter.qrc
 
+*:gcc|*:clang {
+	QMAKE_CXXFLAGS += -std=c++23
+	QMAKE_CXXFLAGS_RELEASE += -std=c++23
+}
+
 # The following variables can be used for automatic VERSIONINFO generating,
 # but unfortunately it is impossible to use them together with RC_FILE or RES_FILE
 # which is needed for specifying the executable file icon in Windows.
@@ -97,14 +102,6 @@ linux:gcc {
 	GCCVERSION = $$split(GCCSTRVER, .)
 	GCCV_MJ = $$member(GCCVERSION, 0)
 	GCCV_MN = $$member(GCCVERSION, 1)
-	greaterThan(GCCV_MJ, 3) {
-		lessThan(GCCV_MN, 7) {
-			QMAKE_CXXFLAGS += -std=gnu++0x
-		}
-		greaterThan(GCCV_MN, 6) {
-			QMAKE_CXXFLAGS += -std=gnu++11
-		}
-	}
 	contains(QT_CONFIG, static) {
 		# Static build is meant for releasing, clean up the binary
 		QMAKE_LFLAGS += -s

@@ -10,7 +10,7 @@ PhysicalDevice::PhysicalDevice(const QString& name) :
 }
 
 // Opens the selected device in WriteOnly mode
-bool PhysicalDevice::open()
+bool PhysicalDevice::open(OpenMode /*flags*/)
 {
 #if defined(Q_OS_WIN32)
     DWORD bret;
