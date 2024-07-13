@@ -72,11 +72,11 @@ RESOURCES += \
 # The following variables can be used for automatic VERSIONINFO generating,
 # but unfortunately it is impossible to use them together with RC_FILE or RES_FILE
 # which is needed for specifying the executable file icon in Windows.
-VERSION = 2.6.2.0
+VERSION = 2.6.4.1
 #QMAKE_TARGET_COMPANY = ROSA
 #QMAKE_TARGET_PRODUCT = "ROSA Image Writer"
 #QMAKE_TARGET_DESCRIPTION = "Tool for creating bootable ROSA installation USB flash drives"
-#QMAKE_TARGET_COPYRIGHT = "Copyright (c) 2016 ROSA"
+#QMAKE_TARGET_COPYRIGHT = "Copyright (c) 2016 ROSA; 2024 OpenMandrivaAssociation"
 
 win32 {
 	RC_FILE += RosaImageWriter.rc
@@ -122,4 +122,4 @@ macx {
 	QMAKE_POST_LINK = strip -S -x $(TARGET)
 }
 
-TRANSLATIONS = lang/ru_RU.ts lang/de_DE.ts lang/fr_FR.ts lang/ast.ts lang/bg.ts lang/ca.ts lang/cs.ts lang/da.ts lang/de.ts lang/en.ts lang/es.ts lang/es_AR.ts lang/fi.ts lang/fr.ts lang/hi_IN.ts lang/hr_HR.ts lang/hu.ts lang/id_ID.ts lang/it.ts lang/ja.ts lang/nl_NL.ts lang/pt_BR.ts lang/pt_PT.ts lang/ro_RO.ts lang/ru.ts lang/tr_TR.ts
+TRANSLATIONS = lang/ru_RU.ts lang/de_DE.ts lang/fr_FR.ts lang/ast.ts lang/bg.ts lang/ca.ts lang/cs.ts lang/da.ts lang/de.ts lang/en.ts lang/es.ts lang/es_AR.ts lang/fi.ts lang/fr.ts lang/hi_IN.ts lang/hr_HR.ts lang/hu.ts lang/id_ID.ts lang/it.ts lang/ja.ts lang/nl_NL.ts lang/pl.ts lang/pt_BR.ts lang/pt_PT.ts lang/ro_RO.ts lang/ru.ts lang/tr_TR.ts
