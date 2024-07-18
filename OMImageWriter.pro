@@ -14,7 +14,7 @@ QT_PLUGINS -= qdds qicns qjp2 qmng qtga qtiff qwbmp qwebp
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = RosaImageWriter
+TARGET = OMImageWriter
 TEMPLATE = app
 
 
@@ -62,7 +62,7 @@ macx {
 FORMS    += maindialog.ui
 
 RESOURCES += \
-    RosaImageWriter.qrc
+    OMImageWriter.qrc
 
 *:gcc|*:clang {
 	QMAKE_CXXFLAGS += -std=c++23
@@ -73,13 +73,13 @@ RESOURCES += \
 # but unfortunately it is impossible to use them together with RC_FILE or RES_FILE
 # which is needed for specifying the executable file icon in Windows.
 VERSION = 2.6.4.1
-#QMAKE_TARGET_COMPANY = ROSA
-#QMAKE_TARGET_PRODUCT = "ROSA Image Writer"
-#QMAKE_TARGET_DESCRIPTION = "Tool for creating bootable ROSA installation USB flash drives"
+#QMAKE_TARGET_COMPANY = OpenMandriva
+#QMAKE_TARGET_PRODUCT = "OM Image Writer"
+#QMAKE_TARGET_DESCRIPTION = "Tool for creating bootable Linux installation USB flash drives"
 #QMAKE_TARGET_COPYRIGHT = "Copyright (c) 2016 ROSA; 2024 OpenMandrivaAssociation"
 
 win32 {
-	RC_FILE += RosaImageWriter.rc
+	RC_FILE += OMImageWriter.rc
 	CONFIG -= embed_manifest_dll embed_manifest_exe
 	msvc {
 		LIBS += Ole32.lib OleAut32.lib

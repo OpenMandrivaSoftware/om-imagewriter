@@ -32,10 +32,10 @@
    <bool>true</bool>
   </property>
   <property name="windowTitle">
-   <string notr="true">ROSA Image Writer</string>
+   <string notr="true">OpenMandriva Image Writer</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="RosaImageWriter.qrc">
+   <iconset resource="OMImageWriter.qrc">
     <normaloff>:/res/icon-rosa.svg</normaloff>:/res/icon-rosa.svg</iconset>
   </property>
   <property name="windowFlags">
@@ -65,7 +65,7 @@
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap resource="RosaImageWriter.qrc">:/res/logo-rosa.png</pixmap>
+        <pixmap resource="OMImageWriter.qrc">:/res/logo-rosa.png</pixmap>
        </property>
        <property name="margin">
         <number>0</number>
@@ -147,7 +147,7 @@
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="RosaImageWriter.qrc">
+        <iconset resource="OMImageWriter.qrc">
          <normaloff>:/res/icon-open.ico</normaloff>:/res/icon-open.ico</iconset>
        </property>
       </widget>
@@ -161,7 +161,7 @@
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="RosaImageWriter.qrc">
+        <iconset resource="OMImageWriter.qrc">
          <normaloff>:/res/icon-refresh.ico</normaloff>:/res/icon-refresh.ico</iconset>
        </property>
       </widget>
@@ -289,7 +289,7 @@
   <tabstop>deviceList</tabstop>
  </tabstops>
  <resources>
-  <include location="RosaImageWriter.qrc"/>
+  <include location="OMImageWriter.qrc"/>
  </resources>
  <connections>
   <connection>
