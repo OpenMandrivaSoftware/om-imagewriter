@@ -74,13 +74,13 @@ if(UNIX AND NOT APPLE)
                   linux/usbdevicemonitor_lin.cpp
   )
   
-  install(FILES DEPLOY.html
-                README.html
+  install(FILES ${CMAKE_SOURCE_DIR}/doc/DEPLOY.html
+                ${CMAKE_SOURCE_DIR}/doc/README.html
           DESTINATION
             share/doc/${PROJECT_NAME}/
   )
 
-  install(FILES LICENSE.html
+  install(FILES ${CMAKE_SOURCE_DIR}/doc/LICENSE.html
           DESTINATION
             share/licenses/${PROJECT_NAME}
   )

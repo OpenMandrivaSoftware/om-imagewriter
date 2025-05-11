@@ -17,7 +17,5 @@ find_package(Qt6 REQUIRED COMPONENTS
 
 qt_standard_project_setup()
 
-#add_subdirectory(lang)
-#add_subdirectory(img)
 add_subdirectory(src)
 
