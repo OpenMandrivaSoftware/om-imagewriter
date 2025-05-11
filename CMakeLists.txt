@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 4.0)
-project(OMImageWriter CXX)
+project(OMImageWriter VERSION 2.7.0 LANGUAGES CXX)
 
 find_package(Qt6 REQUIRED COMPONENTS
                   Core

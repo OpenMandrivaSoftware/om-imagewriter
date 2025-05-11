@@ -37,7 +37,7 @@ if(WIN32)
             OMImageWriter.rc
             icon-open.ico
             icon-refresh.ico
-            icon-rosa.ico
+            icon-om.ico
   )
 endif()
 
@@ -54,7 +54,7 @@ if(APPLE)
 
   qt_add_resources(qt_resources_macOSX
       PREFIX "macOSX/"
-      FILES icon-rosa.icns
+      FILES icon-om.icns
             Info.plist
   )
 endif()
