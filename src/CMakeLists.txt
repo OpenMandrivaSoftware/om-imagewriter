@@ -39,6 +39,8 @@ if(WIN32)
             icon-refresh.ico
             icon-om.ico
   )
+
+  add_compile_options(-Zc:strictStrings)
 endif()
 
 if(APPLE)
