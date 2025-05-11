@@ -36,7 +36,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="OMImageWriter.qrc">
-    <normaloff>:/res/icon-rosa.svg</normaloff>:/res/icon-rosa.svg</iconset>
+    <normaloff>:/img/icon-rosa.svg</normaloff>:/img/icon-rosa.svg</iconset>
   </property>
   <property name="windowFlags">
    <enum>Qt::WindowCloseButtonHint</enum>
@@ -65,7 +65,7 @@
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap resource="OMImageWriter.qrc">:/res/logo-rosa.png</pixmap>
+        <pixmap resource="OMImageWriter.qrc">:/img/logo-rosa.png</pixmap>
        </property>
        <property name="margin">
         <number>0</number>
@@ -148,7 +148,7 @@
        </property>
        <property name="icon">
         <iconset resource="OMImageWriter.qrc">
-         <normaloff>:/res/icon-open.ico</normaloff>:/res/icon-open.ico</iconset>
+         <normaloff>:/img/icon-open.ico</normaloff>:/img/icon-open.ico</iconset>
        </property>
       </widget>
      </item>
@@ -162,7 +162,7 @@
        </property>
        <property name="icon">
         <iconset resource="OMImageWriter.qrc">
-         <normaloff>:/res/icon-refresh.ico</normaloff>:/res/icon-refresh.ico</iconset>
+         <normaloff>:/img/icon-refresh.ico</normaloff>:/img/icon-refresh.ico</iconset>
        </property>
       </widget>
      </item>

@@ -5,7 +5,7 @@
 
 #include <QWidget>
 
-#include "externalprogressbar.h"
+#include "../externalprogressbar.h"
 
 // Class with platform-specific data
 class ExternalProgressBarPrivate
