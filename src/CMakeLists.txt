@@ -84,6 +84,11 @@ if(UNIX AND NOT APPLE)
           DESTINATION
             share/licenses/${PROJECT_NAME}
   )
+
+  install(FILES linux/org.openmandriva.pkexec.om-imagewriter.policy
+          DESTINATION
+            share/polkit-1/actions/
+  )
 endif()
 
 qt_add_executable(om-imagewriter 
@@ -105,5 +110,7 @@ set_target_properties(om-imagewriter PROPERTIES
                         WIN32_EXECUTABLE ON
                         MACOSX_BUNDLE ON
 )
+
+qt_add_translations(om-imagewriter)
 
 install(TARGETS om-imagewriter DESTINATION bin)
