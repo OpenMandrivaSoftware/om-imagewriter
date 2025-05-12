@@ -111,6 +111,8 @@ set_target_properties(om-imagewriter PROPERTIES
                         MACOSX_BUNDLE ON
 )
 
-qt_add_translations(om-imagewriter)
+qt_add_translations(om-imagewriter
+                      TS_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lang
+)
 
 install(TARGETS om-imagewriter DESTINATION bin)

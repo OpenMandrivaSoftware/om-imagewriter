@@ -19,7 +19,6 @@ qt_standard_project_setup(I18N_TRANSLATED_LANGUAGES ast bg ca cs de
                                     de_DE es es_AR fi fr fr_FR hi_IN
                                     hr_HR hu id_ID it ja nl_NL pl pt_BR
                                     pt_PT ro_RO ru ru_RU tr_TR
-                                    
 )
 
 add_subdirectory(src)
