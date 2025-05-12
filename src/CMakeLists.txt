@@ -77,17 +77,22 @@ if(UNIX AND NOT APPLE)
   install(FILES ${CMAKE_SOURCE_DIR}/doc/DEPLOY.html
                 ${CMAKE_SOURCE_DIR}/doc/README.html
           DESTINATION
-            share/doc/${PROJECT_NAME}/
+            share/doc/om-imagewriter/
   )
 
   install(FILES ${CMAKE_SOURCE_DIR}/doc/LICENSE.html
           DESTINATION
-            share/licenses/${PROJECT_NAME}
+            share/licenses/om-imagewriter/
   )
 
   install(FILES linux/org.openmandriva.pkexec.om-imagewriter.policy
           DESTINATION
             share/polkit-1/actions/
+  )
+
+  install(FILES ${CMAKE_SOURCE_DIR}/img/icon-om.svg
+        DESTINATION 
+          share/icons/hicolor/scalable/apps/om-imagewriter.svg
   )
 endif()
 
@@ -116,3 +121,4 @@ qt_add_translations(om-imagewriter
 )
 
 install(TARGETS om-imagewriter DESTINATION bin)
+
