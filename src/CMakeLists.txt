@@ -92,7 +92,9 @@ if(UNIX AND NOT APPLE)
 
   install(FILES ${CMAKE_SOURCE_DIR}/img/icon-om.svg
         DESTINATION 
-          share/icons/hicolor/scalable/apps/om-imagewriter.svg
+          share/icons/hicolor/scalable/apps
+        RENAME
+          om-imagewriter.svg
   )
 endif()
 
