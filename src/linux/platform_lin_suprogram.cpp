@@ -2,7 +2,7 @@
 #include <QStandardPaths>
 #include <QFile>
 
-#include "common.h"
+#include "../common.h"
 #include "platform_lin_suprogram.h"
 
 // Copied from private Qt implementation at qtbase/src/platformsupport/services/genericunix/qgenericunixservices.cpp

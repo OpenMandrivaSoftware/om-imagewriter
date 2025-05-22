@@ -6,8 +6,8 @@
 #include <QRegularExpression>
 
 #include "platform_lin_suprogram.h"
-#include "mainapplication.h"
-#include "usbdevice.h"
+#include "../mainapplication.h"
+#include "../usbdevice.h"
 
 
 bool platformEnumFlashDevices(AddFlashDeviceCallbackProc callback, void* cbParam)

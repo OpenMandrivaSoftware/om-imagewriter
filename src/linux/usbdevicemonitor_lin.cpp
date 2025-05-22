@@ -3,7 +3,7 @@
 
 #include <dlfcn.h>
 
-#include "usbdevicemonitor.h"
+#include "../usbdevicemonitor.h"
 #include "usbdevicemonitor_lin_p.h"
 
 // Declare required functions as weak so that they were not reported as missing at compile time.

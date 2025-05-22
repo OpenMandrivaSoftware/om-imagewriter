@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../img/icon-open.ico</file>
+        <file>../img/icon-refresh.ico</file>
+        <file>../img/icon-om.svg</file>
+        <file>../img/logo-om.png</file>
+    </qresource>
+</RCC>
