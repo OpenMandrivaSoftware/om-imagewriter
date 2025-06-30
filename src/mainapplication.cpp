@@ -24,19 +24,14 @@ QString MainApplication::getInitialDir()
     // win:restricted
     // win:admin
     // mac:restricted
-    // linux:restricted
-    // linux:root
-    // linux: translated dir names
+    // linux: should be using udev rules with MODE="0660", TAG+="uaccess"
     // win: redefined paths
-    if (m_Options.isSet("dir"))
+    if (m_Options.isSet("dir")) {
         return m_Options.value("dir");
-
-    // Otherwise get the standard system Downloads location
-    QStringList downloadDirs = QStandardPaths::standardLocations(QStandardPaths::DownloadLocation);
-    if (downloadDirs.size() > 0)
-        return downloadDirs.at(0);
-    else
-        return "";
+    } else {
+        // Otherwise get the standard system Downloads location
+        return QStandardPaths::writableLocation(QStandardPaths::DownloadLocation);
+    }
 }
 
 // Returns the fila path passed to the application as command-line parameter

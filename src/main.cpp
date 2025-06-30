@@ -38,8 +38,10 @@ int main(int argc, char *argv[])
     appTranslator.load(langName, QCoreApplication::applicationDirPath() + "/lang");
     a.installTranslator(&appTranslator);
 
+#if defined(Q_OS_MAC) || defined(Q_OS_WIN32)
     if (!ensureElevated())
         return 1;
+#endif
 
 #if defined(Q_OS_WIN32)
     // CoInitialize() seems to be called by Qt automatically, so only set security attributes
