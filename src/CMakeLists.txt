@@ -63,14 +63,12 @@ endif()
 
 if(UNIX AND NOT APPLE)
   set(OMI_HEADERS ${OMI_HEADERS}
-                  linux/platform_lin_suprogram.h
                   linux/usbdevicemonitor_lin_p.h
   )
 
   set(OMI_SOURCES ${OMI_SOURCES}
                   linux/externalprogressbar_lin.cpp
                   linux/platform_lin.cpp
-                  linux/platform_lin_suprogram.cpp
                   linux/usbdevicemonitor_lin.cpp
   )
   
@@ -95,6 +93,11 @@ if(UNIX AND NOT APPLE)
           share/icons/hicolor/scalable/apps
         RENAME
           om-imagewriter.svg
+  )
+
+  install(FILES ${CMAKE_SOURCE_DIR}/src/linux/udev_rules/71-usb-storage.rules
+        DESTINATION
+          lib/udev/rules.d
   )
 endif()
 
